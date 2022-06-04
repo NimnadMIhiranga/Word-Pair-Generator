@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
+import './random_words.dart';
 
+void main() => runApp(MyApp());
 
-void main() =>  runApp(MyApp());
-
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.lightGreenAccent),
-      home: Scaffold(
-        appBar: AppBar(title: Text('Word Pair Generator'),
-    )));
+        theme: ThemeData(primaryColor: Colors.purple[900]),
+        home: RandomWords());
   }
 }
